@@ -24,7 +24,6 @@ import com.sejun2.shared.domain.model.PokemonDetail
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 
-
 @Composable
 fun PokemonNavigationView(
     modifier: Modifier,
