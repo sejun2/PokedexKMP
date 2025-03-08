@@ -1,6 +1,11 @@
 ## Pokedex with Kotlin Multi Platform
 
 This is a toy project implementing a PokeDex using **Kotlin Multi Platform**. The app follows **Clean Architecture** principles with **MVVM (Model-View-ViewModel)** pattern.  
+   
+For the **Android native compose version** of the app, click the link below:
+- [Go to PokeDex app using KMP (Compose)](https://github.com/sejun2/Pokedex-android-compose)
+
+
 <table>
    <th>IOS</th>   <th>Android</th>
   <tr>
@@ -13,11 +18,6 @@ This is a toy project implementing a PokeDex using **Kotlin Multi Platform**. Th
   </tr>
 </table>
 
-For the **Android native compose version** of the app, click the link below:
-- [Go to PokeDex app using KMP (Compose)](https://github.com/sejun2/Pokedex-android-compose)
-
-
-This is a toy project implementing a PokeDex using Android Jetpack Compose. The app follows Clean Architecture principles with MVVM (Model-View-ViewModel) pattern.
 
 ## Architecture Overview
 ```
