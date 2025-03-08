@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import com.example.pokemons.ui.theme.Typography
 import com.sejun2.shared.presentation.screen.PokemonDetailScreen
 import com.sejun2.shared.presentation.screen.PokemonListScreen
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -15,7 +16,9 @@ import org.sejun2.project.core.Routes
 @Composable
 @Preview
 fun App(modifier: Modifier = Modifier) {
-    MaterialTheme {
+    MaterialTheme(
+        typography = Typography,
+    ) {
         val navController = rememberNavController()
 
         NavHost(

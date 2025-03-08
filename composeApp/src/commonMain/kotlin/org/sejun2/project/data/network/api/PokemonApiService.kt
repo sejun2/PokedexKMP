@@ -33,5 +33,4 @@ class PokemonApiService {
             }
         }.body()
     }
-
 }

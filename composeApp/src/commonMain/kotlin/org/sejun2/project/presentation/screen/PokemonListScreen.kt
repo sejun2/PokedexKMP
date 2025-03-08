@@ -40,6 +40,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -185,7 +187,7 @@ fun PokemonListHeader() {
         )
         Text(
             text = "Pokédex",
-            style = MaterialTheme.typography.h1.copy(color = Color.White),
+            style = MaterialTheme.typography.h3.copy(color = Color.White),
         )
     }
 }
@@ -204,9 +206,11 @@ fun PokedexSearchBar(value: String, onValueChange: (String) -> Unit) {
         leadingIcon = {
             Image(
                 painterResource(
-                    Res.drawable.ic_search
+                    Res.drawable.ic_search,
                 ),
-                contentDescription = "ic_search"
+                contentDescription = "ic_search",
+                modifier = Modifier.size(24.dp),
+                colorFilter = ColorFilter.tint(Color.White),
             )
         },
         singleLine = true,
@@ -217,6 +221,7 @@ fun PokedexSearchBar(value: String, onValueChange: (String) -> Unit) {
             focusedIndicatorColor = Color.Transparent,
             unfocusedIndicatorColor = Color.Transparent,
             disabledIndicatorColor = Color.Transparent,
+            leadingIconColor = Color.White,
         )
     )
 }

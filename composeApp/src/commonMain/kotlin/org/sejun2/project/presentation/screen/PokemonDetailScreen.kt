@@ -228,7 +228,8 @@ fun Header(
     selectedPokemonIndex: Int,
 ) {
     Row(
-        modifier = modifier.padding(end = 12.dp, start = 4.dp, top = 8.dp, bottom = 8.dp).statusBarsPadding(),
+        modifier = modifier.padding(end = 12.dp, start = 4.dp, top = 8.dp, bottom = 8.dp)
+            .statusBarsPadding(),
         verticalAlignment = Alignment.CenterVertically
     ) {
         IconButton(
@@ -435,8 +436,7 @@ fun PokemonStatItem(stats: Stats, color: Color, maxStat: Int = 250) {
         Text(
             stats.toPrettyName(),
             modifier = Modifier
-                .width(40.dp)
-                .padding(end = 8.dp),
+                .width(44.dp),
             textAlign = TextAlign.End,
             style = MaterialTheme.typography.subtitle1.copy(
                 color = color, fontWeight = FontWeight.Bold
@@ -444,16 +444,17 @@ fun PokemonStatItem(stats: Stats, color: Color, maxStat: Int = 250) {
         )
         Box(
             modifier = Modifier
+                .padding(horizontal = 12.dp, vertical = 4.dp)
                 .height(22.dp)
                 .width(1.dp)
                 .background(color = Color.Gray)
-                .padding(12.dp)
         )
         Text(
             stats.value.toString().toPokedexIndex(),
             modifier = Modifier.width(36.dp),
             textAlign = TextAlign.Center,
             style = MaterialTheme.typography.subtitle2.copy(
+                fontSize = 14.sp,
                 fontWeight = FontWeight.Normal
             )
         )

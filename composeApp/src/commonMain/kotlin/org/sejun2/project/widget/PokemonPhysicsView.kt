@@ -50,13 +50,13 @@ fun PokemonPhysicsView(modifier: Modifier = Modifier, pokemonDetail: PokemonDeta
                 Spacer(modifier = Modifier.width(6.dp))
                 Text(
                     "${pokemonDetail.weight / 10} kg",
-                    style = MaterialTheme.typography.subtitle2,
+                    style = MaterialTheme.typography.subtitle1,
                 )
             }
             Spacer(modifier = Modifier.height(6.dp))
             Text(
                 "Weight",
-                style = MaterialTheme.typography.subtitle2.copy(color = Gray)
+                style = MaterialTheme.typography.subtitle1.copy(color = Gray)
             )
         }
         Box(
@@ -105,7 +105,7 @@ fun PokemonPhysicsView(modifier: Modifier = Modifier, pokemonDetail: PokemonDeta
             Spacer(modifier = Modifier.height(6.dp))
             Text(
                 "Moves",
-                style = MaterialTheme.typography.subtitle2.copy(color = Gray)
+                style = MaterialTheme.typography.subtitle1.copy(color = Gray)
             )
         }
     }
