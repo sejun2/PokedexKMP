@@ -12,6 +12,7 @@ This is a toy project implementing a PokeDex using **Kotlin Multi Platform**. Th
     </td>
   </tr>
 </table>
+
 For the **Android native compose version** of the app, click the link below:
 - [Go to PokeDex app using KMP (Compose)](https://github.com/sejun2/Pokedex-android-compose)
 
