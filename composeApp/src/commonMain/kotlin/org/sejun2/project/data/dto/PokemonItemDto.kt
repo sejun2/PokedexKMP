@@ -10,7 +10,7 @@ data class PokemonItemDto(
     val name: String,
     @SerialName("url")
     val url: String,
-    val index: Int,
+    val index: Int? = null,
 )
 
 fun PokemonItemDto.toDomain(): PokemonSummary {

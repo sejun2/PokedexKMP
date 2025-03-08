@@ -59,6 +59,9 @@ kotlin {
             implementation(libs.ktor.client.okhttp)
         }
         commonMain.dependencies {
+            implementation("tech.annexflow.compose:constraintlayout-compose-multiplatform:0.5.1")
+            implementation("tech.annexflow.compose:constraintlayout-compose-multiplatform:0.5.1-shaded-core")
+            implementation("tech.annexflow.compose:constraintlayout-compose-multiplatform:0.5.1-shaded")
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
@@ -123,6 +126,7 @@ dependencies {
     implementation(libs.androidx.ui.android)
     implementation(libs.androidx.foundation.android)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.androidx.animation.android)
     debugImplementation(compose.uiTooling)
 }
 

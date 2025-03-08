@@ -24,6 +24,7 @@ import org.jetbrains.compose.resources.painterResource
 import pokedexkmp.composeapp.generated.resources.Res
 import pokedexkmp.composeapp.generated.resources.compose_multiplatform
 import pokedexkmp.composeapp.generated.resources.ic_straighten
+import pokedexkmp.composeapp.generated.resources.ic_weight
 
 @Composable
 fun PokemonPhysicsView(modifier: Modifier = Modifier, pokemonDetail: PokemonDetail) {
@@ -42,7 +43,7 @@ fun PokemonPhysicsView(modifier: Modifier = Modifier, pokemonDetail: PokemonDeta
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
-                    painter = painterResource(Res.drawable.compose_multiplatform),
+                    painter = painterResource(Res.drawable.ic_weight),
                     contentDescription = "image_weight",
                     colorFilter = ColorFilter.tint(MaterialTheme.colors.onSurface)
                 )

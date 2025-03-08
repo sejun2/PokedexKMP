@@ -12,7 +12,7 @@ data class PokemonListDto(
     @SerialName("next")
     val next: String,
     @SerialName("previous")
-    val previous: String,
+    val previous: String?,
     @SerialName("results")
     val results: List<PokemonItemDto>?
 )
