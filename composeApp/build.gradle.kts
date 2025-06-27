@@ -56,6 +56,7 @@ kotlin {
             implementation(libs.ktor.client.okhttp)
         }
         commonMain.dependencies {
+            implementation(libs.coil.gif)
             implementation("tech.annexflow.compose:constraintlayout-compose-multiplatform:0.5.1")
             implementation("tech.annexflow.compose:constraintlayout-compose-multiplatform:0.5.1-shaded-core")
             implementation("tech.annexflow.compose:constraintlayout-compose-multiplatform:0.5.1-shaded")
